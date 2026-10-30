@@ -1,0 +1,7 @@
+{
+  "name": "dtwin Release → GHCR",
+  "description": "v* tegida Docker image'larni ghcr.io/dtwinuz/<repo>/<nom> ga chiqaradi va GitHub Release yaratadi.",
+  "iconName": "octicon package",
+  "categories": ["Deployment", "Docker"],
+  "filePatterns": ["Dockerfile$", ".*\\.Dockerfile$"]
+}

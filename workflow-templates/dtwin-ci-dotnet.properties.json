@@ -1,0 +1,7 @@
+{
+  "name": "dtwin CI (.NET)",
+  "description": "dtwin standarti: .NET build (-warnaserror), test va zaif NuGet paketlar tekshiruvi.",
+  "iconName": "octicon check-circle",
+  "categories": ["C#", "Continuous integration"],
+  "filePatterns": ["global.json$", ".*\\.csproj$", ".*\\.slnx?$"]
+}

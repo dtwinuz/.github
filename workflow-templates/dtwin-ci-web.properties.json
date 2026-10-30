@@ -1,0 +1,7 @@
+{
+  "name": "dtwin CI (web, pnpm)",
+  "description": "dtwin standarti: pnpm install, audit, lint va Vite build.",
+  "iconName": "octicon browser",
+  "categories": ["TypeScript", "JavaScript", "Continuous integration"],
+  "filePatterns": ["pnpm-lock\\.yaml$", "package\\.json$"]
+}

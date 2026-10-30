@@ -1,0 +1,30 @@
+name: CI (.NET)
+
+on:
+  pull_request:
+    branches: [$default-branch]
+  push:
+    branches: [$default-branch]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-dotnet-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  backend:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-dotnet@v6
+        with:
+          global-json-file: global.json
+      # Solution yoki loyiha yo'lini moslang
+      - run: dotnet build --configuration Release -warnaserror
+      - run: dotnet test --configuration Release --no-build
+      - run: |
+          dotnet list package --vulnerable --include-transitive | tee vulnerable.log
+          if grep -q "has the following vulnerable packages" vulnerable.log; then exit 1; fi
