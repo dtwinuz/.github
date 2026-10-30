@@ -4,8 +4,8 @@
 
 Zaiflikni **ochiq issue, PR yoki discussion'da yozmang.**
 
-1. Tegishli repoda **Security → Report a vulnerability** tugmasini bosing (GitHub private vulnerability reporting).
-2. Yoki email yuboring: **nosirbek.tech@gmail.com**, mavzu: `[SECURITY] <repo>: <qisqa tavsif>`.
+1. **Public repo** bo'lsa (masalan `teletwin-web`): repoda **Security → Report a vulnerability** tugmasini bosing (GitHub private vulnerability reporting).
+2. **Private repo** bo'lsa yoki tugma ko'rinmasa: email yuboring — **nosirbek.tech@gmail.com**, mavzu: `[SECURITY] <repo>: <qisqa tavsif>`. Private repolarda bu tugma GitHub tomonidan berilmaydi.
 
 Xabarda quyidagilarni yozing:
 - ta'sirlangan repo, URL yoki versiya;
