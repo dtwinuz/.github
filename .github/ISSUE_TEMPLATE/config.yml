@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 🔒 Zaiflik haqida xabar
+    url: https://github.com/dtwinuz/.github/blob/main/SECURITY.md
+    about: Zaifliklarni ochiq issue'da yozmang
+  - name: 🙋 dtwin ilovasidan yordam
+    url: https://dtwin.uz
+    about: Ilova ichidagi Yordam bo'limi

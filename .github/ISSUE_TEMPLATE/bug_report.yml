@@ -1,0 +1,39 @@
+name: 🐞 Xato haqida xabar
+description: Nimadir kutilganidek ishlamayapti
+labels: ["bug", "triage"]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: Nima bo'ldi?
+      description: Nimani ko'rdingiz va nimani kutgan edingiz?
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Qayta chiqarish qadamlari
+      placeholder: |
+        1. ... sahifasiga kiring
+        2. ... tugmasini bosing
+        3. Xato chiqadi
+    validations:
+      required: true
+  - type: input
+    id: where
+    attributes:
+      label: Qayerda?
+      description: URL, ilova versiyasi yoki commit
+      placeholder: https://dtwin.uz/... yoki v0.1.0
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Platforma
+      multiple: true
+      options: [Web (desktop), Web (mobil), Telegram Mini App, Windows ilova, Android, iOS, Boshqa]
+  - type: textarea
+    id: logs
+    attributes:
+      label: Log / skrinshot
+      description: Token va shaxsiy ma'lumotlarni olib tashlang
+      render: shell

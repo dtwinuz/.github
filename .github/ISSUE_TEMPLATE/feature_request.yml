@@ -1,0 +1,26 @@
+name: 💡 Yangi imkoniyat
+description: G'oya yoki yaxshilash taklifi
+labels: ["enhancement", "triage"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Qanday muammoni hal qiladi?
+      placeholder: Men ... qilmoqchiman, lekin hozir ...
+    validations:
+      required: true
+  - type: textarea
+    id: solution
+    attributes:
+      label: Taklif etilayotgan yechim
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Boshqa variantlar
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Siz uchun qanchalik muhim?
+      options: [Juda kerak, Bo'lsa yaxshi, Shunchaki g'oya]
