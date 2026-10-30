@@ -26,6 +26,11 @@
 
 `.NET` · `TypeScript` · `React` · `PostgreSQL` · `Docker` · `Caddy` · `Cloudflare` · `MCP`
 
+## 🧱 Yangi loyiha boshlash
+
+- [`dtwin-app-template`](https://github.com/dtwinuz/dtwin-app-template): .NET 10 API, React/Vite, Docker, CI va GHCR reliz tayyor holda. **Use this template** tugmasini bosing.
+- Mavjud repoga CI qo'shish: **Actions → New workflow** oching, "By dtwin" bo'limidagi template'lardan birini tanlang.
+
 ## 🤝 Hissa qo'shish
 
 - Xato yoki g'oya bo'lsa, tegishli repoda **issue** oching.
