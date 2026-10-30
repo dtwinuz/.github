@@ -1,7 +1,15 @@
 name: 🐞 Xato haqida xabar
 description: Nimadir kutilganidek ishlamayapti
 labels: ["bug", "triage"]
+type: Bug
 body:
+  - type: checkboxes
+    id: searched
+    attributes:
+      label: Tekshirdim
+      options:
+        - label: Shu xato haqida ochiq issue yo'q (qidirib ko'rdim)
+          required: true
   - type: textarea
     id: what
     attributes:
@@ -25,6 +33,13 @@ body:
       label: Qayerda?
       description: URL, ilova versiyasi yoki commit
       placeholder: https://dtwin.uz/... yoki v0.1.0
+  - type: dropdown
+    id: env
+    attributes:
+      label: Muhit
+      options: [Prod, Dev / test bot, Lokal]
+    validations:
+      required: true
   - type: dropdown
     id: platform
     attributes:

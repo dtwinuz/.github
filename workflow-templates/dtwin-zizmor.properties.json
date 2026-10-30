@@ -1,0 +1,7 @@
+{
+  "name": "dtwin zizmor (workflow xavfsizligi)",
+  "description": "dtwin standarti: GitHub Actions workflow'larini zizmor bilan statik tahlil (medium+ topilmada CI qizil).",
+  "iconName": "octicon shield-check",
+  "categories": ["Security", "Continuous integration"],
+  "filePatterns": [".github/workflows/.*\.ya?ml$"]
+}

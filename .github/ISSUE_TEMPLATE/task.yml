@@ -1,0 +1,26 @@
+name: 📋 Vazifa
+description: Jamoa ichidagi aniq ish (refactor, infra, texnik qarz)
+labels: ["triage"]
+type: Task
+body:
+  - type: textarea
+    id: goal
+    attributes:
+      label: Nima qilinadi va nega?
+    validations:
+      required: true
+  - type: textarea
+    id: done
+    attributes:
+      label: Tayyor bo'lish mezoni
+      placeholder: |
+        - [ ] ...
+        - [ ] ...
+    validations:
+      required: true
+  - type: dropdown
+    id: deploy
+    attributes:
+      label: Deploy ta'siri
+      multiple: true
+      options: [Yo'q, DB migratsiya, .env / secret o'zgarishi, Qo'lda qadam]
