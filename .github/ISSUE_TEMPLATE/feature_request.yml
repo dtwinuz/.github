@@ -1,6 +1,7 @@
 name: 💡 Yangi imkoniyat
 description: G'oya yoki yaxshilash taklifi
 labels: ["enhancement", "triage"]
+type: Feature
 body:
   - type: textarea
     id: problem
