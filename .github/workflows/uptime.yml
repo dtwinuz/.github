@@ -1,0 +1,29 @@
+# Tashqi kuzatuv: status sahifasi VPS'ning o'zida, VPS yiqilsa u xabar bera olmaydi.
+# Xato bo'lsa GitHub workflow failure xabarini yuboradi. Public repo: Actions daqiqalari bepul.
+# Eslatma: repoda 60 kun faollik bo'lmasa GitHub schedule'ni o'chiradi.
+name: Tashqi uptime
+
+on:
+  schedule:
+    - cron: '*/15 * * * *'
+  workflow_dispatch:
+
+permissions: {}
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 4
+    steps:
+      - name: Saytlarni tekshirish
+        run: |
+          failed=0
+          for url in https://dtwin.uz/ https://status.dtwin.uz/ https://faktura.dtwin.uz/health https://primus-library.dtwin.uz/; do
+            code="$(curl -sS -o /dev/null -w '%{http_code}' --retry 3 --retry-delay 20 --retry-all-errors -m 20 "$url" || echo 000)"
+            echo "$url $code"
+            case "$code" in
+              2*|3*) ;;
+              *) echo "::error::$url javob bermadi: $code"; failed=1 ;;
+            esac
+          done
+          exit "$failed"
