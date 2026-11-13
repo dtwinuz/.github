@@ -7,7 +7,7 @@
 *A digital-twin ecosystem from Tashkent: personal planning, fitness, health, commerce, office monitoring and corporate messaging.*
 
 [![dtwin.uz](https://img.shields.io/website?url=https%3A%2F%2Fdtwin.uz&label=dtwin.uz&style=flat-square)](https://dtwin.uz)
-[![Mahsulotlar](https://img.shields.io/badge/mahsulotlar-7-1f6feb?style=flat-square)](#-mahsulotlar)
+[![Mahsulotlar](https://img.shields.io/badge/mahsulotlar-8-1f6feb?style=flat-square)](#-mahsulotlar)
 [![Email](https://img.shields.io/badge/email-nosirbek.tech%40gmail.com-555?style=flat-square)](mailto:nosirbek.tech@gmail.com)
 
 [🌐 dtwin.uz](https://dtwin.uz) · [🎞 Taqdimot](https://dtwin.uz/overview) · 📍 Toshkent, O'zbekiston
@@ -26,12 +26,15 @@
 | 🏋️ | **gym.dtwin** | Mashg'ulot kundaligi: tayyor reja, bir bosishda set yozish, dam olish taymeri, rekordlar va progress | [![](https://img.shields.io/website?url=https%3A%2F%2Fgym.dtwin.uz&label=&style=flat-square)](https://gym.dtwin.uz) | [gym.dtwin.uz](https://gym.dtwin.uz) | [overview](https://gym.dtwin.uz/overview/) |
 | 🩺 | **med.dtwin** | Shifokorlar uchun klinik bilim platformasi | [![](https://img.shields.io/website?url=https%3A%2F%2Fmed.dtwin.uz&label=&style=flat-square)](https://med.dtwin.uz) | [med.dtwin.uz](https://med.dtwin.uz) | [overview](https://med.dtwin.uz/overview/) |
 | 🛍 | **shop.dtwin** | Instagram kiyim do'konlari bitta katalogda: o'lcham bo'yicha qidiruv, narx alertlari, sotuvchi paneli | [![](https://img.shields.io/website?url=https%3A%2F%2Fshop.dtwin.uz&label=&style=flat-square)](https://shop.dtwin.uz) | [shop.dtwin.uz](https://shop.dtwin.uz) | [overview](https://shop.dtwin.uz/overview/) |
+| ⌨️ | **bitg** | O'zbekcha matnni yozish paytida 2026-yilgi lotin alifbosiga (ö ğ ş ç ʼ) o'giradigan kiritish usuli: Windows, Linux, macOS; ochiq kod | [![](https://img.shields.io/website?url=https%3A%2F%2Fbitg.uz&label=&style=flat-square)](https://bitg.uz) | [bitg.uz](https://bitg.uz) · [GitHub](https://github.com/dtwinuz/bitg) | — |
 | 🖥 | **Xnosir Desktop** | GitHub Desktop ustidagi dasturchi paneli: butun ish kuni bitta oynada | [![](https://img.shields.io/website?url=https%3A%2F%2Fdesktop.dtwin.uz&label=&style=flat-square)](https://desktop.dtwin.uz) | [desktop.dtwin.uz](https://desktop.dtwin.uz) | [overview](https://desktop.dtwin.uz/overview/) |
 
 ## 🔓 Ochiq kod
 
 | Repo | Nima | Litsenziya |
 |---|---|---|
+| [bitg](https://github.com/dtwinuz/bitg) | O'zbek lotin alifbosi uchun kiritish usuli (Rust yadro, Windows TSF, Linux IBus/Fcitx5, macOS)<br>[![OpenSSF Best Practices](https://www.bestpractices.dev/projects/16620/badge)](https://www.bestpractices.dev/projects/16620) [![OpenSSF Scorecard](https://api.scorecard.dev/projects/github.com/dtwinuz/bitg/badge)](https://scorecard.dev/viewer/?uri=github.com/dtwinuz/bitg) | MIT OR Apache-2.0 |
+| [homebrew-tap](https://github.com/dtwinuz/homebrew-tap) | bitg uchun Homebrew tap: `brew install --cask dtwinuz/tap/bitg` | — |
 | [teletwin-web](https://github.com/dtwinuz/teletwin-web) | TeleTwin web, desktop (Tauri) va Android klienti — Telegram Web A fork'i | GPL-3.0 |
 | [.github](https://github.com/dtwinuz/.github) | Org profili, hissa qo'shish qoidalari, issue/PR shablonlari, workflow template'lar | — |
 
@@ -57,6 +60,13 @@ Qolgan repolar yopiq; ular bilan ishlash uchun org a'zosi bo'lish kerak.
 - **Kod sifati:** har PR'da CI, faqat **squash merge**, oylik guruhlangan Dependabot.
 - **Supply chain:** action'lar commit SHA'ga mahkamlangan, release workflow'larida minimal ruxsatlar, image'lar uchun SBOM, provenance va Trivy skaneri.
 - **Reja:** har mahsulotning GitHub Project'i va umumiy portfolio.
+
+## 🔐 Xavfsizlik
+
+- **Akkauntlar:** org'da barcha a'zolar uchun ikki bosqichli kirish (2FA) majburiy, faqat xavfsiz usullar (ilova, passkey, xavfsizlik kaliti; SMS emas).
+- **Zaiflik xabari:** har public repoda GitHub private vulnerability reporting yoqilgan; qoidalar — [SECURITY](https://github.com/dtwinuz/.github/blob/main/SECURITY.md).
+- **Secret scanning va push protection:** public repolarda yoqilgan.
+- **bitg:** [OpenSSF Best Practices](https://www.bestpractices.dev/projects/16620) silver, reproducible build, har relizda SLSA provenance va SBOM (`gh attestation verify`).
 
 ## 🧱 Yangi loyiha boshlash
 
