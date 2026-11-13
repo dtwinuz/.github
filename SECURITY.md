@@ -16,9 +16,11 @@ Xabarda quyidagilarni yozing:
 
 | Bosqich | Muddat |
 |---|---|
-| Qabul qilinganini tasdiqlash | 72 soat |
-| Dastlabki baho | 7 kun |
-| Tuzatish (kritik) | imkon qadar tez, odatda 14 kun ichida |
+| Xabar olinganini tasdiqlash | 7 kun ichida |
+| Tekshirish va xavf darajasi (CVSS) | 14 kun ichida |
+| Tuzatish va reliz (yuqori/kritik) | 60 kun ichida, iloji bo'lsa tezroq |
+
+Bu muddatlar barcha dtwinuz va wonmortech repolarida hamda https://wonmor.io/security sahifasida bir xil.
 
 Tuzatish chiqarilgandan keyin, roziligingiz bo'lsa, hissangizni Release yoki advisory'da ko'rsatamiz.
 
